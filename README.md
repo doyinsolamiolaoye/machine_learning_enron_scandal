@@ -1,4 +1,4 @@
-# Investigating Enron's scandal using Machine Learning
+# Indentifying Fraud from Enron Email
  Udacity's Intro to Machine Learning, Final Project.
 
 ## Project Overview
