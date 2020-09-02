@@ -25,6 +25,8 @@ The features in the data fall into three major types, namely financial features,
 * email features: `['to_messages', 'email_address', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi'] (units are generally number of emails messages; notable exception is ‘email_address’, which is a text string)`
 * POI label: `[‘poi’] (boolean, represented as integer)`
 
+## Feature Selection
+
 ## Algorithm Selection and Tuning
 
 ## Validation and Performance
