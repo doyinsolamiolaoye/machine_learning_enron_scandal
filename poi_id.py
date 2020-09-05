@@ -73,7 +73,7 @@ minmaxscaler = preprocessing.MinMaxScaler()
 features_train = minmaxscaler.fit_transform(features_train)
 features_test = minmaxscaler.transform(features_test)
 
-from sklearn.decomposition import PCA
+#from sklearn.decomposition import PCA
 
 from sklearn.feature_selection import SelectKBest
 selector = SelectKBest( k = 5)
