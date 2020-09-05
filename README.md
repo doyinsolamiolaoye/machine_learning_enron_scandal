@@ -19,13 +19,15 @@ The [dataset]() is comprised of:
 * 18 of these points is labeled as a POI and 128 as non-POI
 * Each point/person is associated with 21 features (14 financial, 6 email, 1 labeled)
 
+There are 3 clear outliers in the data, TOTAL, THE TRAVEL AGENCY IN THE PARK and LOCKHART EUGENE E . The first one seems to be the sum total of all the other data points, while the second outlier is quite bizarre, the last one is a person in the comapny but almost all values of its features are NaN values. These outliers are removed from the dataset for all the analysis. 
+
+## Feature Selection
+
 The features in the data fall into three major types, namely financial features, email features and POI labels.
 
 * financial features: `['salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees'] (all units are in US dollars)`
 * email features: `['to_messages', 'email_address', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi'] (units are generally number of emails messages; notable exception is ‘email_address’, which is a text string)`
 * POI label: `[‘poi’] (boolean, represented as integer)`
-
-## Feature Selection
 
 At the begining, I started of by using only the features that has NaN values in less than 50% of the whole dataset, finally, I did feature selection by selecting only the top 5 features which had the highest impact on my model.
 I did not create or add new features from the ones originally in the dataset.
