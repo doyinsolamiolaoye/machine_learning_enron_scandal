@@ -39,12 +39,15 @@ I tried out different algorithms: NaiveBayes, DecisionTrees, svc. I used the alg
 Using the 3-fold StratifiedKFold cross-validation as provided in the `tester.py` script, my final model had the following average performance metrics:
 
 - Accuracy:  0.83960
+
 This means my model was 83.96% accurate in predicting whether a person was a POI or not. That is, my model averaged 83.96% accuracy in predicting a 0 or 1 correctly. It is important to get the accuracy as high as possible; however, it is interesting to note that since only 12.5% of the people in the final data set were POIs (18/144), if my model had predicted all 0s, that is, all non-POIs, the accuracy would have been 87.5%. So, accuracy is important, but not the most important metric in quantifying how good the model is.
 
 - Precision: 0.37712
+
 This means that 37.7% of the people my model classified as POIs were actually POIs. So, the ratio of true_POIs/(false_POIs + true_POIs) was 0.37712. This is important because we don't want to "falsely accuse" too many people of being POIs -- so the higher our precision, the lower our percentage of false accusations compared to accurate accusations.
 
 - Recall: 0.31150
+
 This means that 31.15% of the POIs in the data were correctly identified by the model. In mathematical terms, this is the ratio of true_POIs/(false_non_POIs + true_POIs). This is important because we want to catch as many of the POIs as possible, to make sure they face justice.
 
 The Requirements for the final projet is to have at least 0.3 for the precision and recall when the `tester.py` script is run.
