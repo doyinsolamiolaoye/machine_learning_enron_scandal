@@ -36,6 +36,8 @@ I tried out different algorithms: NaiveBayes, DecisionTrees, svc. I used the alg
 
 ## Validation and Performance
 
+By running the `poi_id.py` script, my perfromance metrics were 90% accuracy and 60% for both the precision and recall.
+
 Using the 3-fold StratifiedKFold cross-validation as provided in the `tester.py` script, my final model had the following average performance metrics:
 
 - Accuracy:  0.83960
