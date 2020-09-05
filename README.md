@@ -51,3 +51,10 @@ This means that 37.7% of the people my model classified as POIs were actually PO
 This means that 31.15% of the POIs in the data were correctly identified by the model. In mathematical terms, this is the ratio of true_POIs/(false_non_POIs + true_POIs). This is important because we want to catch as many of the POIs as possible, to make sure they face justice.
 
 The Requirements for the final projet is to have at least 0.3 for the precision and recall when the `tester.py` script is run.
+
+## Files in this Repo:
+- final_project_dataset.pkl -- Udacity-provided dataset
+- Machine Learning file: poi_id.py (run this file if needed)
+- Pickle files: my_dataset.pkl, my_classifier.pkl, my_feature_list.pkl
+- Tester file: tester.py (unmodified from Udacity-distributed code)
+- ./tools -- Udacity-provided tools directory incase you want to clone this repo and run on your system.
